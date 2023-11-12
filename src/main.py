@@ -22,10 +22,14 @@ while len(str(live_start_time)) != 0:
         
         time_difference_in_minutes = time_difference_cal(live_start_time)
         timestamp = minutes_converter(time_difference_in_minutes)
-        print(timestamp)
+        #print(timestamp)
+
         
-        user_input_song_name = str(input("Enter the song name: "))
-        
-        file_creator(timestamp[0], timestamp[1], timestamp[2], user_input_song_name)
-        
-        continue
+        user_timestamp_confirmation = input(f"Confirm: {timestamp[0]}:{timestamp[1]}:{timestamp[2]}? (y/n) ")
+
+        while user_timestamp_confirmation == "" or user_timestamp_confirmation == "n": 
+            break
+        else: 
+            user_input_song_name = str(input("Enter the song name: "))
+            file_creator(timestamp[0], timestamp[1], timestamp[2], user_input_song_name)
+            continue
