@@ -9,7 +9,8 @@ def time_difference_cal(start_time):
     ##print(f"{live_start_time.date()} {live_start_time.hour}:{live_start_time.minute}:{live_start_time.second}")
     ##print(float(live_start_time))
     
-    return math.floor((float(current_time()) - float(start_time))/60)
+    return (float(current_time()) - float(start_time))/60
+    
 
 
 

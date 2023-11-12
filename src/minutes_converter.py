@@ -2,7 +2,7 @@ import math
 
 def minutes_converter(minutes):
         hours = math.floor(minutes / 60)
-        remainingMinutes = minutes % 60
+        remainingMinutes = math.floor(minutes % 60)
         seconds = math.floor((minutes * 60) % 60)
         #seconds = 20
 
