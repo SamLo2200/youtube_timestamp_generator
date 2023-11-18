@@ -156,7 +156,7 @@ dmypy.json
 cython_debug/
 
 #Output
-timestamp*.txt
+**.txt
 
 *.sh
 
