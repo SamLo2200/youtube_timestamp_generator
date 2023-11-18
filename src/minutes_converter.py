@@ -1,6 +1,10 @@
 import math 
 
 def minutes_converter(minutes):
+
+        #10 seconds delay
+        minutes = minutes - 0.166667
+
         hours = math.floor(minutes / 60)
         remainingMinutes = math.floor(minutes % 60)
         seconds = math.floor((minutes * 60) % 60)
