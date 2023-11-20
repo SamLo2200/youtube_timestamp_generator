@@ -28,7 +28,7 @@ while len(str(live_start_time)) != 0:
         
         user_timestamp_confirmation = input(f"Confirm: {timestamp[0]}:{timestamp[1]}:{timestamp[2]}? (y/n) ")
 
-        while user_timestamp_confirmation == "" or user_timestamp_confirmation == "n": 
+        while user_timestamp_confirmation == "n": 
             break
         else: 
             user_input_song_name = str(input("Enter the song name: "))
